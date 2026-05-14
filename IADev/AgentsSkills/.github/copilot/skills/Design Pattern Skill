@@ -1,0 +1,15 @@
+# Design Patterns Skill
+
+Sugerir quando apropriado:
+
+- Strategy
+- Factory
+- Builder
+- Mediator
+- Repository
+
+Evitar:
+
+- uso desnecessário de patterns
+- complexidade excessiva
+- overengineering
