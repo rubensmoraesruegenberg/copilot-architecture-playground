@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Sofia\\Source\\copilot-architecture-playground\\iadev\\AgentsSkills\\SalesApi\\SalesApi.csproj": {}
+    "C:\\Users\\Sofia\\Source\\copilot-architecture-playground\\IADev\\AgentsSkills\\src\\SalesApi\\SalesApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Sofia\\Source\\copilot-architecture-playground\\iadev\\AgentsSkills\\SalesApi\\SalesApi.csproj": {
+    "C:\\Users\\Sofia\\Source\\copilot-architecture-playground\\IADev\\AgentsSkills\\src\\SalesApi\\SalesApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sofia\\Source\\copilot-architecture-playground\\iadev\\AgentsSkills\\SalesApi\\SalesApi.csproj",
+        "projectUniqueName": "C:\\Users\\Sofia\\Source\\copilot-architecture-playground\\IADev\\AgentsSkills\\src\\SalesApi\\SalesApi.csproj",
         "projectName": "SalesApi",
-        "projectPath": "C:\\Users\\Sofia\\Source\\copilot-architecture-playground\\iadev\\AgentsSkills\\SalesApi\\SalesApi.csproj",
+        "projectPath": "C:\\Users\\Sofia\\Source\\copilot-architecture-playground\\IADev\\AgentsSkills\\src\\SalesApi\\SalesApi.csproj",
         "packagesPath": "C:\\Users\\Sofia\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sofia\\Source\\copilot-architecture-playground\\iadev\\AgentsSkills\\SalesApi\\obj\\",
+        "outputPath": "C:\\Users\\Sofia\\Source\\copilot-architecture-playground\\IADev\\AgentsSkills\\src\\SalesApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Sofia\\AppData\\Roaming\\NuGet\\NuGet.Config"
