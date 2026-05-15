@@ -1,0 +1,48 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": ".NET Core Launch (HTTPS)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/src/SalesApi/bin/Debug/net8.0/SalesApi.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/src/SalesApi",
+            "stopAtEntry": false,
+            "serverReadyAction": {
+                "pattern": "\\bNow listening on:\\s+(https?://\\S+)",
+                "uriFormat": "{}",
+                "action": "openExternally"
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            }
+        },
+        {
+            "name": ".NET Core Launch (HTTP)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/src/SalesApi/bin/Debug/net8.0/SalesApi.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/src/SalesApi",
+            "stopAtEntry": false,
+            "serverReadyAction": {
+                "pattern": "\\bNow listening on:\\s+(https?://\\S+)",
+                "uriFormat": "{}",
+                "action": "openExternally"
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development",
+                "ASPNETCORE_URLS": "http://localhost:5227"
+            }
+        },
+        {
+            "name": ".NET Core Attach",
+            "type": "coreclr",
+            "request": "attach",
+            "processId": "${command:pickProcess}"
+        }
+    ]
+}

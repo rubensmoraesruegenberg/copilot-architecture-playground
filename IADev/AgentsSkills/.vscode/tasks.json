@@ -1,0 +1,92 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "command": "dotnet",
+            "type": "shell",
+            "args": [
+                "build",
+                "${workspaceFolder}/src/SalesApi/SalesApi.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "problemMatcher": "$msCompile",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "clean",
+            "command": "dotnet",
+            "type": "shell",
+            "args": [
+                "clean",
+                "${workspaceFolder}/src/SalesApi/SalesApi.csproj"
+            ]
+        },
+        {
+            "label": "rebuild",
+            "command": "dotnet",
+            "type": "shell",
+            "args": [
+                "build",
+                "--no-restore",
+                "${workspaceFolder}/src/SalesApi/SalesApi.csproj",
+                "/property:GenerateFullPaths=true",
+                "/consoleloggerparameters:NoSummary"
+            ],
+            "dependsOn": "clean",
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "restore",
+            "command": "dotnet",
+            "type": "shell",
+            "args": [
+                "restore",
+                "${workspaceFolder}/src/SalesApi/SalesApi.csproj"
+            ]
+        },
+        {
+            "label": "run",
+            "command": "dotnet",
+            "type": "shell",
+            "args": [
+                "run",
+                "--project",
+                "${workspaceFolder}/src/SalesApi/SalesApi.csproj",
+                "--no-build"
+            ],
+            "isBackground": false,
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "test",
+            "command": "dotnet",
+            "type": "shell",
+            "args": [
+                "test",
+                "${workspaceFolder}"
+            ],
+            "problemMatcher": "$msCompile"
+        },
+        {
+            "label": "publish",
+            "command": "dotnet",
+            "type": "shell",
+            "args": [
+                "publish",
+                "${workspaceFolder}/src/SalesApi/SalesApi.csproj",
+                "-c",
+                "Release"
+            ]
+        }
+    ]
+}

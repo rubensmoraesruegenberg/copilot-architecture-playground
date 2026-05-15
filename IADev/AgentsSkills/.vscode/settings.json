@@ -1,0 +1,36 @@
+{
+    "[csharp]": {
+        "editor.defaultFormatter": "ms-dotnettools.csharp",
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": true
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
+    },
+    "csharp.showOmnisharpExplorer": true,
+    "omnisharp.enableEditorConfigSupport": true,
+    "omnisharp.enableRoslynAnalyzers": true,
+    "omnisharp.warningLevel": "default",
+    "omnisharp.autoStart": true,
+    "omnisharp.path": "latest",
+    "editor.formatOnSave": true,
+    "editor.rulers": [80, 120],
+    "editor.wordWrap": "on",
+    "files.exclude": {
+        "**/bin": true,
+        "**/obj": true,
+        "**/.vs": true,
+        "**/.vscode": false
+    },
+    "search.exclude": {
+        "**/bin": true,
+        "**/obj": true,
+        "**/.vs": true
+    },
+    "files.watcherExclude": {
+        "**/bin": true,
+        "**/obj": true,
+        "**/.vs": true
+    }
+}
