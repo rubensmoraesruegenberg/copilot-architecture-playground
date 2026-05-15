@@ -1,6 +1,9 @@
 # Build
-bin/
-obj/
+**/bin/
+**/obj/
+
+# Cache
+*.cache
 
 # Visual Studio
 .vs/
