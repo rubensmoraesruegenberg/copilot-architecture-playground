@@ -4,6 +4,7 @@ namespace SalesApi.Domain;
 
 public class Product
 {
+    public int Id { get; set; }
     public decimal Price { get; }
 
     public Product(decimal price)
@@ -21,3 +22,4 @@ public class Product
         return Price > 100;
     }
 }
+

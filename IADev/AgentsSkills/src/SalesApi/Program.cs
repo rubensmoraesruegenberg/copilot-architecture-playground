@@ -1,6 +1,7 @@
 using SalesApi.Application.Interfaces;
 using SalesApi.Application.Services;
 using SalesApi.Infrastructure;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,6 +9,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+// Configure Entity Framework Core with InMemory Database
+builder.Services.AddDbContext<SalesDbContext>(options =>
+    options.UseInMemoryDatabase("SalesDb"));
 
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
